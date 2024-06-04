@@ -236,11 +236,11 @@ git checkout -b branches # Create and checkout a new branch named branches
 ## Merge a branch
 
 ```
-git commit -m 'add branches'
+$ git commit -m 'add branches'
 [branches 66860ae] add branches
  2 files changed, 92 insertions(+), 2 deletions(-)
 
-git push origin branches 
+$ git push origin branches 
 Enumerating objects: 7, done.
 Counting objects: 100% (7/7), done.
 Delta compression using up to 16 threads
@@ -254,5 +254,33 @@ remote:      https://github.com/n-west/bl-git-intro/pull/new/branches
 remote: 
 To github.com:n-west/bl-git-intro.git
  * [new branch]      branches -> branches
+```
+
+---
+
+## Merge a branch
+
+![[github-pull-request.png]]
+
+---
+
+## Summary
+
+The git repo history is stored in `.git`
+
+```
+git add # specify files individually or use -i
+git commit # opens an editor. Save the file will save the commit
+git push REMOTE BRANCH # push the given branch to the given remote
+```
+
+Nothing special about "origin" or "main" other than default values for new repositories
+
+* Look at history with `git log` (hit q to exit)
+
+```
+git checkout -b BRANCH_NAME # create a branch with a separate history
+git status
+git pull ORIGIN BRANCH # didn't discuss, but this pulls changes
 ```
 
