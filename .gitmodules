@@ -1,0 +1,3 @@
+[submodule "training-kit"]
+	path = training-kit
+	url = https://github.com/github/training-kit
