@@ -329,7 +329,11 @@ Nothing special about "origin" or "main" other than default values for new repos
 
 ```
 git checkout -b BRANCH_NAME # create a branch with a separate history
-git status
-git pull ORIGIN BRANCH # didn't discuss, but this pulls changes
+# do work
+git status # check the status of your repository
+git add # -i to use interactive mode
+git commit # type a message like an email
+git push ORIGIN BRANCH
+# Look at github, managae pull requests, etc
 ```
 
