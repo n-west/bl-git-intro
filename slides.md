@@ -8,11 +8,14 @@ revealOptions:
   transition: slide
 css:
   - ./css/custom.css
+  - customers/git intro/css/custom.css
 ---
 
 ## git
 
 Distributed version control system created by Linus Torvalds (of Linux) to manage linux kernel contributions (likes to name his projects after himself)
+
+
 
 Stack Overflow conducts annual developer surveys (in 2022):
 * git is used by 97% of developers
@@ -20,6 +23,7 @@ Stack Overflow conducts annual developer surveys (in 2022):
 * 56% use Github professionally (87% personally); 29% use Gitlab professionally (21% personally).
 ![[figures/developer-survey.png]]
 https://survey.stackoverflow.co/2022/#version-control-version-control-system-prof  <!-- element class="left-aligned" -->
+
 
 ---
 
@@ -221,7 +225,9 @@ To github.com:n-west/bl-git-intro.git
 git branch branches
 git status
 On branch main
+```
 
+```
 git checkout branches
 git status
 On branch branches
@@ -236,11 +242,13 @@ git checkout -b branches # Create and checkout a new branch named branches
 ## Merge a branch
 
 ```
-$ git commit -m 'add branches'
+git commit -m 'add branches'
 [branches 66860ae] add branches
  2 files changed, 92 insertions(+), 2 deletions(-)
+```
 
-$ git push origin branches 
+```
+git push origin branches 
 Enumerating objects: 7, done.
 Counting objects: 100% (7/7), done.
 Delta compression using up to 16 threads
@@ -264,6 +272,47 @@ To github.com:n-west/bl-git-intro.git
 
 ---
 
+## Pull changes
+
+If you want to **pull** changes from a remote in to your branch:
+
+```
+git pull REMOTE BRANCH
+```
+
+```
+git pull origin main 
+From github.com:n-west/bl-git-intro
+ * branch            main       -> FETCH_HEAD
+hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can do so by running one of the following commands sometime before
+hint: your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: Need to specify how to reconcile divergent branches.
+
+```
+
+Many options to reconcile, comes down to preferences and people can get very opinionated.
+
+![[github-tree-after-merge.png]]
+
+---
+
+## Merge options
+
+* fast-forward: replay this branch's commits on top of the other branch (always safe)
+* git merge: create a merge commit (safe, but can make odd logs)
+* git rebase: good for linear history, requires clean tree, can be tricky
+
+---
 ## Summary
 
 The git repo history is stored in `.git`
