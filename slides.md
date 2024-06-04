@@ -231,3 +231,28 @@ On branch branches
 git checkout -b branches # Create and checkout a new branch named branches
 ```
 
+---
+
+## Merge a branch
+
+```
+git commit -m 'add branches'
+[branches 66860ae] add branches
+ 2 files changed, 92 insertions(+), 2 deletions(-)
+
+git push origin branches 
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.29 KiB | 1.29 MiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+remote: 
+remote: Create a pull request for 'branches' on GitHub by visiting:
+remote:      https://github.com/n-west/bl-git-intro/pull/new/branches
+remote: 
+To github.com:n-west/bl-git-intro.git
+ * [new branch]      branches -> branches
+```
+
