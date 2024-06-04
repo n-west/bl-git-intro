@@ -136,9 +136,98 @@ git add -i
 *** Commands ***
   1: status	  2: update	  3: revert	  4: add untracked
   5: patch	  6: diff	  7: quit	  8: help
-What now> 
+What now> u
+           staged     unstaged path
+  1:    unchanged       +54/-1 slides.md
+Update>> 1
+           staged     unstaged path
+* 1:    unchanged       +54/-1 slides.md
+Update>> 
+updated 1 path
 
+*** Commands ***
+  1: status	  2: update	  3: revert	  4: add untracked
+  5: patch	  6: diff	  7: quit	  8: help
+What now> a
+           staged     unstaged path
+  1: figures/github-lfs.png
+Add untracked>> 1
+           staged     unstaged path
+* 1: figures/github-lfs.png
+Add untracked>> 
+added 1 path
+
+*** Commands ***
+  1: status	  2: update	  3: revert	  4: add untracked
+  5: patch	  6: diff	  7: quit	  8: help
+What now> 
+*** Commands ***
+  1: status	  2: update	  3: revert	  4: add untracked
+  5: patch	  6: diff	  7: quit	  8: help
+What now> q
+Bye.
 ```
 
 * `-i` is "interactive", has a terminal user-interface to indicate **updates**, **add untracked**, and a few other options.
-* `u`
+* `u` and `a` to update or add. Enter numbers as range (1-4,6-8,10) to select which files to update or add
+* enter to accept and go back up a menu, q to quit
+
+---
+
+## How I do it (write a commit)
+
+```
+git commit
+```
+
+This should trigger a text editor to open.
+
+* Write commit messages like an email to your future self
+* First line is a subject
+* Empty line
+* Body of email, don't waste time on it but describe any nuances that might be useful when looking at history
+
+If you do this well, `git log` can give you a nearly automated work log for your project
+
+---
+
+## How I do it (push commits)
+
+```
+git push origin main 
+Uploading LFS objects: 100% (1/1), 70 KB | 0 B/s, done.                                                                         
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.23 KiB | 1.23 MiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:n-west/bl-git-intro.git
+   486bd24..e2feeb6  main -> main
+```
+
+
+---
+
+## Branches
+
+* Branches allow an alternate universe to exist in parallel
+* Different branches can have different history, then be **merged**
+* Many techniques and opinions on merges!
+	* **merge commit**, **fast-forward**, **rebase**
+
+```
+git branch branches
+git status
+On branch main
+
+git checkout branches
+git status
+On branch branches
+```
+
+```
+git checkout -b branches # Create and checkout a new branch named branches
+```
+

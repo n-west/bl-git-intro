@@ -1,2 +1,3 @@
 figures/developer-survey.png filter=lfs diff=lfs merge=lfs -text
 figures/git[[:space:]]commit.png filter=lfs diff=lfs merge=lfs -text
+figures/github-lfs.png filter=lfs diff=lfs merge=lfs -text
