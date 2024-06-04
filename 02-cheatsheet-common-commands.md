@@ -99,3 +99,13 @@ has pushed.
 git pull REMOTE BRANCH
 ```
 
+
+## git log
+
+```
+git log
+```
+
+Look at the history of commits from the HEAD of your current tree. You will see branch names
+and commit messages, hashes, etc. You can also pass branch names or commit SHAs to view the
+history from the perspective of that commit

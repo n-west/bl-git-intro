@@ -211,6 +211,17 @@ To github.com:n-west/bl-git-intro.git
    486bd24..e2feeb6  main -> main
 ```
 
+---
+
+## Look at the history
+
+```
+git log
+```
+
+![[git-log.png]]
+
+This opens history in a tool called `less`. You can use arrows, pgup, pgdn keys to move up and down, use `/` to search. Hit `q` to exit
 
 ---
 
