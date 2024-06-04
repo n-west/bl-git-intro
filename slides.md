@@ -88,4 +88,57 @@ The tree stores all files and **deltas** of files. This is practically important
 
 * git-lfs is a way to store large files that are tracked fundamentally different
 * Consider it a pointer to a url to download, no changes are tracked
-* This repository contains images tracked with `git-lfs`. 
+* This repository contains images tracked with `git-lfs`, if you don't see them you'll need to install git-lfs
+![[github-lfs.png]]
+
+Use `git lfs track FILENAME` to use LFS on a file
+
+---
+
+## Standard workflow
+
+* Work on some files
+* `git add` indicate a group of changes
+* `git commit` to record changes to the repository
+* `git push` to send those changes to a remote (Github)
+
+---
+
+## How I do it (get ready for a commit):
+
+Look at the current status
+```
+git status
+
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   slides.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	figures/github-lfs.png
+
+```
+
+You see changes to files you've already tracked through git and new files that git is not tracking.
+
+---
+
+## How I do it (add changes)
+
+```
+git add -i
+           staged     unstaged path
+  1:    unchanged       +45/-1 slides.md
+
+*** Commands ***
+  1: status	  2: update	  3: revert	  4: add untracked
+  5: patch	  6: diff	  7: quit	  8: help
+What now> 
+
+```
+
+* `-i` is "interactive", has a terminal user-interface to indicate **updates**, **add untracked**, and a few other options.
+* `u`
