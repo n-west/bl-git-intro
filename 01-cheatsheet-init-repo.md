@@ -54,4 +54,4 @@ To add a submodule to your repository use
 git submodule add URI
 ```
 
-You will then need to add changes to the .gtimodules and commit them
+You will then need to add changes to the .gitmodules and commit them
