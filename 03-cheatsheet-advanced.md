@@ -33,7 +33,7 @@ This is a dangerous but powerful command. Try to avoid using it until you've pus
 or work on a toy repository. You can **squash** commits which will merge them in to a single commit in history
 and allow you to change the message. You can **fixup** which will just merge commits to a single commit. You
 can reorder commits my moving lines in the interactive dialog around. You can **edit** commits which allows you
-to remove or add specific changes inside the commit. You can **ammend** a commit which allows you to change the
+to remove or add specific changes inside the commit. You can **amend** a commit which allows you to change the
 message.
 
 
