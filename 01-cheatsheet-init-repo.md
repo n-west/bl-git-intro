@@ -1,7 +1,7 @@
 
 # Initializing repos
 
-## New porject
+## New project
 
 For new porjects, you can initialize a repository with
 
@@ -20,7 +20,7 @@ If there is an existing project you `clone` it with
 git clone URL
 ```
 
-For read-only from github you can use https://github.com/USERNAME/REPOSTIRY.
+For read-only from github you can use https://github.com/USERNAME/REPOSITORY.
 
 For read/write you should use your ssh key with the URI git@github.com:USERNAME/REPOSITORY
 
@@ -54,4 +54,4 @@ To add a submodule to your repository use
 git submodule add URI
 ```
 
-You will then need to add changes to the .gtimodules and commit them
+You will then need to add changes to the .gitmodules and commit them

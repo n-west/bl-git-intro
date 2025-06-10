@@ -34,7 +34,7 @@ your future self looking through the log to write it as an e-mail to yourself or
 You can also use a shorthand if your message won't be long:
 
 ```
-git commit -m '-m stands for --message and will use whatever you put in quotes as the msesage'
+git commit -m '-m stands for --message and will use whatever you put in quotes as the message'
 ```
 
 GUI tools will often put a textbook adjacent to a checkbox for a commit dialog. You select the files to commit
@@ -48,7 +48,7 @@ but they can also be discarded.
 
 In some philosophies of using git for pedantic versioning ("git flow") you have branches that are long-lived
 and intended to support older versions. The idea is that features go on new branches and any bug fixes can be
-merged or cherry-picked between branches so you truly have paralle l paths of your code.
+merged or cherry-picked between branches so you truly have parallel paths of your code.
 
 
 ```
@@ -71,7 +71,7 @@ git checkout -b BRANCH_NAME
 
 ## git push
 
-Push a branch and its commits to a remote (like Githu)b
+Push a branch and its commits to a remote (like Github)
 
 ```
 git push REMOTE BRANCH
@@ -88,7 +88,7 @@ will provide instructions but you can use the following:
 git remote add NAME git@github.com:USERNAME/PROJECTNAME.git
 ```
 
-This styl eof URI uses ssh keys to log in as the git user to github.com
+This style of URI uses ssh keys to log in as the git user to github.com
 
 ## git pull
 
