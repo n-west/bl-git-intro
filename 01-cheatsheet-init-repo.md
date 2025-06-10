@@ -9,7 +9,7 @@ For new porjects, you can initialize a repository with
 git init
 ```
 
-Nothing magic happens, but the repository contents are created in `.git`. You'll still have to
+Nothing magic happens, but the repository contents are created in `.git` (a hidden directory). You'll still have to
 add, commit, and push changes. On Github, you'll have to make a repository before you can push to it.
 
 ## Existing project
