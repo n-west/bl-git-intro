@@ -4,7 +4,7 @@
 ## git status
 
 Show the current status including what files have changed, which files are new and untracked, and the
-staging status of any files.
+staging status of any files. Also shows your current branch.
 
 ## git add
 
