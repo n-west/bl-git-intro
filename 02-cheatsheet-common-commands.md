@@ -71,7 +71,7 @@ git checkout -b BRANCH_NAME
 
 ## git push
 
-Push a branch and its commits to a remote (like Githu)b
+Push a branch and its commits to a remote (like Github)
 
 ```
 git push REMOTE BRANCH
