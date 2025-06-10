@@ -345,6 +345,6 @@ git status # check the status of your repository
 git add # -i to use interactive mode
 git commit # type a message like an email
 git push ORIGIN BRANCH
-# Look at github, managae pull requests, etc
+# Look at github, manage pull requests, etc
 ```
 
