@@ -27,9 +27,11 @@ Once you have staged changes,
 git commit
 ```
 
-will open a text editor for a commit message. You're required to have **something** but it's entirely up
-to you what that is. Again, this was originally meant as a primarily e-mail based exchange and it can help
-your future self looking through the log to write it as an e-mail to yourself or another knowledgable party.
+will open a text editor for a commit message. You're required to have
+**something** but it's entirely up to you what that is. Again, this was
+originally meant as a primarily e-mail based exchange and it can help your
+future self looking through the log to write it as an e-mail to yourself or
+another knowledgeable party.
 
 You can also use a shorthand if your message won't be long:
 
